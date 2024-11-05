@@ -1,320 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Mahendra Ponnala</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Mahendra Ponnala</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic1.png" alt="Mahendra profile picture" /> 
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Mahendra Ponnala</h1>
-        <p class="section__text__p2">Devops Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/mahendra-ponnala-44bb60303/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/mahendrakanna'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <br></br>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic1.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>4+ years <br />Devops Engineer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              A passionate and skilled DevOps and Cloud Engineer with a strong background in infrastructure
-              provisioning, automation, and monitoring.<br></br>
-            </p>
-            <p>
-              Have experience working with tools such as Jenkins, Terraform, and Ansible to streamline development 
-              processes and ensure efficient code deployment. Proficient in managing and monitoring cloud infrastructure 
-              services on AWS, as well as maintaining high availability in Kubernetes-based container clusters. 
-              Successfully implemented monitoring and logging tools like ELK, and Grafana to ensure comprehensive 
-              visibility into system performance and implemented Terrafrom and AWS cloud Formation for managing infrastructure as code. My expertise 
-              also includes integrating automation testing into the CI/CD pipeline and developing scripts to automate tasks, 
-              improving efficiency and reducing manual effort.<br></br> 
-            </p>
-            <p>
-              With a Bachelor's degree in Computer Science and a strong GPA, I am committed to continuous learning 
-              and professional growth. I am seeking opportunities to leverage my skills and contribute to the 
-              success of DevOps and cloud engineering projects.
 
-            </p>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Mahendra Ponnala</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Mahendra Ponnala</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-      <br>
-      </br>
-      <br>
-      </br>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic1.png" alt="Mahendra profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Mahendra Ponnala</h1>
+      <p class="section__text__p2">Devops Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/mahendra-ponnala-44bb60303/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/mahendrakanna'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <br></br>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic1.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Devops Engineer</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>AWS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>AWS VPC</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Terraform</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Linux</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>docker</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>shell scripting </h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Kubernetes</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>3+ years <br />Devops Engineer</p>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Devops Engineer</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Jenkins</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Monitoring</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Database</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            A passionate and skilled AWS DevOps and Cloud Engineer with a strong background in infrastructure
+            provisioning, automation, and monitoring.<br></br>
+          </p>
+          <p>
+            Have experience working with tools such as Jenkins, Terraform, Docker and Kubernetes to streamline
+            development
+            processes and ensure efficient code deployment. Proficient in managing and monitoring cloud infrastructure
+            services on AWS, as well as maintaining high availability in Kubernetes-based container clusters.
+            Successfully implemented monitoring and logging tools like New relic to ensure comprehensive
+            visibility into system performance and implemented Terrafrom and AWS cloud Formation for managing
+            infrastructure as code. My expertise
+            also includes integrating automation testing into the CI/CD pipeline and developing scripts to automate
+            tasks,
+            improving efficiency and reducing manual effort.<br></br>
+          </p>
+          <p>
+            With a Bachelor's degree in Computer Science and strong GPA, I am committed to continuous learning
+            and professional growth. I am seeking opportunities to leverage my skills and contribute to the
+            success of DevOps and cloud engineering projects.
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <br>
+  </br>
+  <br>
+  </br>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Devops Engineer</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>AWS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>AWS VPC</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Terraform</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Linux</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>docker</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>shell scripting </h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Kubernetes</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Devops Engineer</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Jenkins</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Monitoring</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Database</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="text-container">
-        <p>
-          Bread Financial Holdings is an American publicly-traded provider of loyalty
-          and marketing services, such as private label credit cards, coalition loyal
-          programs, and direct marketing, derived from the capture and analysis of 
-          transaction-rich data.<br></br>
-        </p>
-        <p>
-          Maintain high availability of applications using health checks using Liveness and Readiness 
-          probes and init containers. Work with development and test teams to establish build schedules,
-          execute builds, and troubleshoot build issues. Including creating AWS pipelines for CI/CD and
-          working on committing AWS code as a code base. Used AWS Pipelines as the build tool for the 
-          main Java project and developed build artifacts with source code Creating and maintaining scripts 
-          and automation tools to deploy and manage secure network configurations. Work closely with 
-          development, security and operations teams to ensure alignment of security practices and integration 
-          requirements. Develop and execute incident response plans in the event of a security breach or network
-          attack. Security monitoring, using tools and techniques to continuously monitor network and code 
-          security. <br> </br>
-          Configured Maven and Jenkins to deploy generated artifacts to Artifactory. Responsible for creating 
-          jobs in Jenkins and monitoring daily operations in Jenkins. Scheduled build jobs, configured build 
-          pipeline and automated deployment using Jenkins. Configured Master-Slave architecture and implemented 
-          parallel builds to improve Jenkins performance Implemented Docker (Images/Containers) with Jenkins CI/CD
-          process. Force continuous integration by configuring Git, Maven and Jenkins. Participate in build versions
-          and deployments. Worked on Docker container snapshots, image deletion and managing containers.
-          Hands on experience in Jenkins, creating upstream and downstream jobs. Scheduling backup of Instances 
-          or its EBS volumes as per requirement.
-        </p>
-      </div>
-      <!--div class="experience-details-container">
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <h2 class="experience-sub-title">project 1: Swatantra systems private limited</h2>
+    <div class="text-container">
+      <p>
+        Swatantra believe in solving real-world complex digital challenges with an innovative design thinking
+        approach. As a best-in-class digital transformation services provider, Swatantra work with Fortune 500
+        clientsto simplify their digital journeys. Our people are the heart of our business. We are a growing 
+        team of world-class technologists, passionate about helping our clients solve their most pressing technology
+        challenges.<br></br>
+      </p>
+      <p>
+        As a DevOps Engineer for a team that involved different development
+        teams and multiple simultaneous software releases.
+        Developed and implemented software release management strategies
+        for various applications according to the Agile Process.
+        Managing GitHub repository.
+        Building pipeline on Jenkins using Groovy.
+        Managing Docker and containers for various micro application
+        configuration management using Ansible.
+        Installation and managing Docker and creating containers.Managing
+        deployment in Docker.
+        Setting and managing Persistent Volumes in Docker. Scripting based on
+        the project requirement.
+        Worked with python scripting to perform few operations
+        Creating andmanaging virtualmachines using templates.
+        Installation, configuration and maintaining of Apache tomcat web servers.
+          Maintain high availability of applications using health checks using Liveness and Readiness
+        probes and init containers. Work with development and test teams to establish build schedules,
+        execute builds, and troubleshoot build issues. Including creating AWS pipelines for CI/CD and
+        working on committing AWS code as a code base. Used AWS Pipelines as the build tool for the
+        main Java project and developed build artifacts with source code Creating and maintaining scripts
+        and automation tools to deploy and manage secure network configurations. Work closely with
+        development, security and operations teams to ensure alignment of security practices and integration
+        requirements. Develop and execute incident response plans in the event of a security breach or network
+        attack. Security monitoring, using tools and techniques to continuously monitor network and code
+        security. <br> </br>
+        Configured Maven and Jenkins to deploy generated artifacts to Artifactory. Responsible for creating
+        jobs in Jenkins and monitoring daily operations in Jenkins. Scheduled build jobs, configured build
+        pipeline and automated deployment using Jenkins. Configured Master-Slave architecture and implemented
+        parallel builds to improve Jenkins performance Implemented Docker (Images/Containers) with Jenkins CI/CD
+        process. Force continuous integration by configuring Git, Maven and Jenkins. Participate in build versions
+        and deployments. Worked on Docker container snapshots, image deletion and managing containers.
+        Hands on experience in Jenkins, creating upstream and downstream jobs. Scheduling backup of Instances
+        or its EBS volumes as per requirement.
+      </p>
+    </div>
+    
+    <h2 class="experience-sub-title">project 2 macy's.inc </h2>
+    <div class="text-container">
+      <p>
+        Macy's is an American department store chain founded in 1858 by Rowland Hussey Macy. It has been a sister brand 
+        to the Bloomingdale's department store chain since being acquired by holding company Federated Department 
+        Stores, which renamed itself Macy's, Inc..<br></br>
+      </p>
+      <p>
+        Managing continuous deployments on Docker & Kubernetes. Installation and
+        managing Kubernetes (EKS).
+        Skilled at Software Development Life Cycles and Agile / Scrum Methodologies / Practices.
+        Creating Docker images by Dockerfile andmaintained in container registry.
+        Managing EC2, S3, including backups, patches, and scaling in AWS.
+        Setup and automate high availability clusters with AWS Auto Scaling, Load Balancers.
+        In-depth knowledge of DevOps management methodologies and production deployment
+        Configurations.
+        Cloud DevOps Engineer
+        Experience with Code Pipeline as Continuous Integration / Continuous Deployment
+        Tool and strong expertise Maven Build Frameworks.
+        Created tagging standards for proper identification and ownership of EC2 instances and
+        other AWS resources.
+        Experience in managing infrastructure resources in cloud architecture with close
+        coordination with various functional teams.
+        Worked with IAM service creating new IAM users & groups, defining roles and policies and
+        Identity providers.
+        Where I have worked closely with the client for alert metrics.
+        Setting and managing the Gitlab repository.
+        Creating Docker images by Dockerfile andmaintained in container registry.
+        Create andmaintain fully automated CI/CD pipelines on Jenkins
+        continuous code deployment.
+        Creating Ansible playbooks as per project requirement. Actively manage, improve and
+        monitor cloud infrastructure
+        Writing Dockerfile, deployment.yml, service.yml and pipeline based on project
+         <br> </br>
+      </p>
+    </div>
+    <!--div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
@@ -402,19 +384,11 @@
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
           <p><a href="mailto:examplemail@gmail.com">Mahendraponnala1995@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
           <p><a href="https://www.linkedin.com/in/mahendra-ponnala-44bb60303">LinkedIn</a></p>
         </div>
       </div>
@@ -432,5 +406,6 @@
       </nav>
     </footer>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
